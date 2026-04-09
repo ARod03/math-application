@@ -49,6 +49,31 @@ public class MathApp {
         double x2 = 85;
         double y2 = 50;
 
+        System.out.println("The distance between the 2 points is " + Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2)) + ".");
+
+        //6. Find and display the absolute (positive) value of a variable after it is set to -3.8
+
+        double value = -3.8;
+        System.out.println("The absolute value of -3.8 is " + Math.abs(value) + ".");
+
+        //7. Find and display a random number between 0 and 1
+
+        System.out.println("While picking between numbers 0 and 1, I have gotten " + Math.random() + ".");
+
+        //8. Calculate how many minutes are in 24 days, use a variable for each value you
+        //calculate with.
+
+        int days = 24;
+        int minutesPerHour = 60;
+        int hoursPerDay = 24;
+
+        System.out.println("There are " + days * hoursPerDay * minutesPerHour + " minutes in 24 days.");
+
+        //BONUS: How many milliseconds?
+
+        int totalMinutes = days * hoursPerDay * minutesPerHour;
+
+        System.out.println("There are " + totalMinutes * 60 * 1000 + " milliseconds in a day.");
 
     }
 }
